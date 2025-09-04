@@ -1,0 +1,37 @@
+body{
+  color:brown;
+  font-weight: bold;
+}
+.field-area{
+  border: solid 2px;
+  height: 25px;
+  border-radius: 20px;
+  outline: none;
+  width: 450px;
+  height: 40px;
+  border-color:mistyrose;
+  margin-left: 40px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  transition: box-shadow 0.5s ease;
+}
+.field-area:hover,.field-area:focus{
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.15);
+  border-color: white;
+}
+.buttons,.reset-buttons{
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 80px;
+  height: 30px;
+  transition: all 0.5s ease;
+}
+.buttons:hover{
+  background-color: greenyellow;
+  color: rgb(11, 86, 40);
+}
+.reset-buttons:hover{
+  background-color: red;
+}

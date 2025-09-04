@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Form
+    </title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body >
+    <div style="display: flex;justify-content: center; width: 100%; ">
+      <form class="form" style="width: 500px;min-width: 500px;padding-left: 0px; align-items: center;">
+        <h1 style="text-align: center;">PAN CARD APPLICATION</h1>
+        <label >Name:<span style="color: red;"><sup>*</sup></span>  <br>
+          <input id="name" class="field-area" type="text" required>
+          <span id="nameError" style="margin-left: 40px;"></span>
+        </label><br>
+        <label>Gender:<span style="color: red;"><sup>*</sup></span></label><br>
+        <input style="  margin-left: 40px;margin-top: 10px;margin-bottom: 5px;" name="gender" id="male" type="radio" checked>
+        <label style="cursor: pointer;" for="male">Male</label>
+        <input type="radio" id="female" name="gender">
+        <label style="cursor: pointer;" for="female">Female</label>
+        <input type="radio" name="gender" id="other">
+        <label style="cursor: pointer;" for="other">Other</label><br>
+        <label>Age:<span style="color: red;"><sup>*</sup></span> <br>
+          <input id="age" class="field-area" type="number" required>
+          <span id="ageError" style="margin-left: 40px;" font-size: 10px;"></span>
+        </label><br>
+        <label>DOB:<span style="color: red;"><sup>*</sup></span> <br>
+          <input id="DOBInput" style="min-width: 165px;" class="field-area" type="date" required>
+          <span style="margin-left: 40px;" id="DOBError"></span>
+        </label><br>
+        <label >Father's Name:<span style="color: red;"><sup>*</sup></span> <br>
+          <input id="fatherNameInput" class="field-area" type="text" required>
+          <span style="margin-left: 40px;" id="fatherNameError"></span>
+        </label><br>
+        <label>Mother's Name:<span style="color: red;"><sup>*</sup></span> <br>
+          <input id="motherNameInput" class="field-area" type="text" required>
+          <span style="margin-left: 40px;" id="motherNameError"></span>
+        </label><br>
+        <label >Address:<span style="color: red;"><sup>*</sup></span> <br>
+          <textarea class="field-area" style="max-width: 450px;min-width: 450px; max-height: 100px;min-height: 100px;" placeholder="Enter your address" required></textarea>
+        </label><br>
+        <label>Mobile Number:<span style="color: red;"><sup>*</sup></span> <br>
+          <input id="numberInput" class="field-area" type="number" required>
+          <span style="margin-left: 40px;" id="numberError"></span>
+        </label><br>
+        <label>Email ID:<span style="color: red;"><sup>*</sup></span><br>
+          <input id="emailInput" class="field-area" type="email" required>
+          <span style="margin-left: 40px;" id="emailError"></span>
+        </label><br>
+        <label >Aadhar Number:<span style="color: red;"><sup>*</sup></span><br>
+          <input id="aadharInput" class="field-area" type="number" required>
+          <span id="aadharError" style="margin-left: 40px; "></span>
+        </label><br><br>
+        <label title="Either Aadhar or Voter ID or Driving License ">Proof of Identity:<span style="color: red;"><sup>*</sup></span> <br>
+          <input style="  margin-left: 40px;
+  margin-top: 10px;margin-bottom: 5px;" type="file" required>
+        </label><br><br>
+        <label >Applicant Signature:<span style="color: red;"><sup>*</sup></span><br>
+          <input style="  margin-left: 40px;
+  margin-top: 10px;margin-bottom: 5px;" type="file" required>
+        </label><br><br>
+        <input id="declaration" type="checkbox" required>
+        <label style="cursor: pointer;" for="declaration">I here by declare that submitted  all thing are valid and true<span style="color: red;"><sup>*</sup></span> </label><br><br>
+        <div style="display: flex;justify-content: space-between;max-width: 490px;">
+          <button class="buttons" type="submit">Submit</button>
+          <button class="reset-buttons" type="reset">Reset</button>
+        </div>
+      </form>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
